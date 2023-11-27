@@ -1,0 +1,713 @@
+WARNING - 2023-11-23 08:50:09 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$playstation is deprecated in APPPATH\Controllers\Home.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 08:50:09 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$transaction is deprecated in APPPATH\Controllers\Home.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 08:52:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$playstation is deprecated in APPPATH\Controllers\Home.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 08:52:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$transaction is deprecated in APPPATH\Controllers\Home.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 08:54:05 --> [DEPRECATED] Creation of dynamic property App\Controllers\HistoryController::$playstation is deprecated in APPPATH\Controllers\HistoryController.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\HistoryController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 08:54:05 --> [DEPRECATED] Creation of dynamic property App\Controllers\HistoryController::$transaction is deprecated in APPPATH\Controllers\HistoryController.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\HistoryController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 08:54:07 --> [DEPRECATED] Creation of dynamic property App\Controllers\HistoryController::$playstation is deprecated in APPPATH\Controllers\HistoryController.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\HistoryController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 08:54:07 --> [DEPRECATED] Creation of dynamic property App\Controllers\HistoryController::$transaction is deprecated in APPPATH\Controllers\HistoryController.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\HistoryController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 08:54:54 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$playstation is deprecated in APPPATH\Controllers\Home.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 08:54:54 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$transaction is deprecated in APPPATH\Controllers\Home.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 08:54:55 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$playstation is deprecated in APPPATH\Controllers\Home.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 08:54:55 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$transaction is deprecated in APPPATH\Controllers\Home.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 08:54:55 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$playstation is deprecated in APPPATH\Controllers\Home.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 08:54:55 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$transaction is deprecated in APPPATH\Controllers\Home.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 08:56:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\HistoryController::$playstation is deprecated in APPPATH\Controllers\HistoryController.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\HistoryController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 08:56:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\HistoryController::$transaction is deprecated in APPPATH\Controllers\HistoryController.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\HistoryController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 08:56:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\HistoryController::$playstation is deprecated in APPPATH\Controllers\HistoryController.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\HistoryController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 08:56:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\HistoryController::$transaction is deprecated in APPPATH\Controllers\HistoryController.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\HistoryController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 08:56:22 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$playstation is deprecated in APPPATH\Controllers\Transaction.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 08:56:22 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$transaction is deprecated in APPPATH\Controllers\Transaction.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 08:56:22 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$history is deprecated in APPPATH\Controllers\Transaction.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 08:56:22 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$guest is deprecated in APPPATH\Controllers\Transaction.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 08:56:23 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$playstation is deprecated in APPPATH\Controllers\Transaction.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 08:56:23 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$transaction is deprecated in APPPATH\Controllers\Transaction.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 08:56:23 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$history is deprecated in APPPATH\Controllers\Transaction.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 08:56:23 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$guest is deprecated in APPPATH\Controllers\Transaction.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 08:56:23 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$playstation is deprecated in APPPATH\Controllers\Transaction.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 08:56:23 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$transaction is deprecated in APPPATH\Controllers\Transaction.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 08:56:23 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$history is deprecated in APPPATH\Controllers\Transaction.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 08:56:23 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$guest is deprecated in APPPATH\Controllers\Transaction.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 08:56:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 08:56:29 --> [DEPRECATED] Creation of dynamic property App\Controllers\Playstation::$playstation is deprecated in APPPATH\Controllers\Playstation.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Playstation->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 08:56:30 --> [DEPRECATED] Creation of dynamic property App\Controllers\Playstation::$playstation is deprecated in APPPATH\Controllers\Playstation.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Playstation->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 08:56:34 --> [DEPRECATED] Creation of dynamic property App\Controllers\HistoryController::$playstation is deprecated in APPPATH\Controllers\HistoryController.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\HistoryController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 08:56:34 --> [DEPRECATED] Creation of dynamic property App\Controllers\HistoryController::$transaction is deprecated in APPPATH\Controllers\HistoryController.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\HistoryController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 08:56:34 --> [DEPRECATED] Creation of dynamic property App\Controllers\HistoryController::$playstation is deprecated in APPPATH\Controllers\HistoryController.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\HistoryController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 08:56:34 --> [DEPRECATED] Creation of dynamic property App\Controllers\HistoryController::$transaction is deprecated in APPPATH\Controllers\HistoryController.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\HistoryController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 08:57:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$playstation is deprecated in APPPATH\Controllers\Home.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 08:57:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$transaction is deprecated in APPPATH\Controllers\Home.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 08:57:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$playstation is deprecated in APPPATH\Controllers\Home.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 08:57:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$transaction is deprecated in APPPATH\Controllers\Home.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 08:57:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$playstation is deprecated in APPPATH\Controllers\Home.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 08:57:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$transaction is deprecated in APPPATH\Controllers\Home.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 08:58:28 --> [DEPRECATED] Creation of dynamic property App\Controllers\HistoryController::$playstation is deprecated in APPPATH\Controllers\HistoryController.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\HistoryController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 08:58:28 --> [DEPRECATED] Creation of dynamic property App\Controllers\HistoryController::$transaction is deprecated in APPPATH\Controllers\HistoryController.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\HistoryController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 08:58:28 --> [DEPRECATED] Creation of dynamic property App\Controllers\HistoryController::$playstation is deprecated in APPPATH\Controllers\HistoryController.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\HistoryController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 08:58:28 --> [DEPRECATED] Creation of dynamic property App\Controllers\HistoryController::$transaction is deprecated in APPPATH\Controllers\HistoryController.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\HistoryController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 08:58:39 --> [DEPRECATED] Creation of dynamic property App\Controllers\HistoryController::$playstation is deprecated in APPPATH\Controllers\HistoryController.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\HistoryController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 08:58:39 --> [DEPRECATED] Creation of dynamic property App\Controllers\HistoryController::$transaction is deprecated in APPPATH\Controllers\HistoryController.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\HistoryController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 08:58:39 --> [DEPRECATED] Creation of dynamic property App\Controllers\HistoryController::$playstation is deprecated in APPPATH\Controllers\HistoryController.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\HistoryController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 08:58:39 --> [DEPRECATED] Creation of dynamic property App\Controllers\HistoryController::$transaction is deprecated in APPPATH\Controllers\HistoryController.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\HistoryController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 08:58:41 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$playstation is deprecated in APPPATH\Controllers\Home.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 08:58:41 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$transaction is deprecated in APPPATH\Controllers\Home.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 08:58:41 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$playstation is deprecated in APPPATH\Controllers\Home.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 08:58:41 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$playstation is deprecated in APPPATH\Controllers\Home.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 08:58:41 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$transaction is deprecated in APPPATH\Controllers\Home.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 08:58:41 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$transaction is deprecated in APPPATH\Controllers\Home.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 10:17:00 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$playstation is deprecated in APPPATH\Controllers\Transaction.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 10:17:00 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$transaction is deprecated in APPPATH\Controllers\Transaction.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 10:17:00 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$history is deprecated in APPPATH\Controllers\Transaction.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 10:17:00 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$guest is deprecated in APPPATH\Controllers\Transaction.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 10:17:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$playstation is deprecated in APPPATH\Controllers\Transaction.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 10:17:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$transaction is deprecated in APPPATH\Controllers\Transaction.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 10:17:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$history is deprecated in APPPATH\Controllers\Transaction.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 10:17:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$guest is deprecated in APPPATH\Controllers\Transaction.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 10:17:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 10:17:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$playstation is deprecated in APPPATH\Controllers\Transaction.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 10:17:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$transaction is deprecated in APPPATH\Controllers\Transaction.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 10:17:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$history is deprecated in APPPATH\Controllers\Transaction.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 10:17:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$guest is deprecated in APPPATH\Controllers\Transaction.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 10:17:41 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$playstation is deprecated in APPPATH\Controllers\Transaction.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 10:17:41 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$transaction is deprecated in APPPATH\Controllers\Transaction.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 10:17:41 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$history is deprecated in APPPATH\Controllers\Transaction.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 10:17:41 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$guest is deprecated in APPPATH\Controllers\Transaction.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 10:17:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$playstation is deprecated in APPPATH\Controllers\Transaction.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 10:17:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$transaction is deprecated in APPPATH\Controllers\Transaction.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 10:17:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$history is deprecated in APPPATH\Controllers\Transaction.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 10:17:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$guest is deprecated in APPPATH\Controllers\Transaction.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 10:17:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 10:17:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$playstation is deprecated in APPPATH\Controllers\Transaction.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 10:17:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$transaction is deprecated in APPPATH\Controllers\Transaction.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 10:17:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$history is deprecated in APPPATH\Controllers\Transaction.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 10:17:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$guest is deprecated in APPPATH\Controllers\Transaction.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 10:17:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 10:17:53 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$playstation is deprecated in APPPATH\Controllers\Transaction.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 10:17:53 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$transaction is deprecated in APPPATH\Controllers\Transaction.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 10:17:53 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$history is deprecated in APPPATH\Controllers\Transaction.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 10:17:53 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$guest is deprecated in APPPATH\Controllers\Transaction.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 10:17:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 10:17:57 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$playstation is deprecated in APPPATH\Controllers\Transaction.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 10:17:57 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$transaction is deprecated in APPPATH\Controllers\Transaction.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 10:17:57 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$history is deprecated in APPPATH\Controllers\Transaction.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 10:17:57 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$guest is deprecated in APPPATH\Controllers\Transaction.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 10:17:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$playstation is deprecated in APPPATH\Controllers\Transaction.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 10:17:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$transaction is deprecated in APPPATH\Controllers\Transaction.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 10:17:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$history is deprecated in APPPATH\Controllers\Transaction.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 10:17:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$guest is deprecated in APPPATH\Controllers\Transaction.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 10:17:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 10:17:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$playstation is deprecated in APPPATH\Controllers\Transaction.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 10:17:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$transaction is deprecated in APPPATH\Controllers\Transaction.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 10:17:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$history is deprecated in APPPATH\Controllers\Transaction.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 10:17:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$guest is deprecated in APPPATH\Controllers\Transaction.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 10:18:09 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$playstation is deprecated in APPPATH\Controllers\Transaction.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 10:18:09 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$transaction is deprecated in APPPATH\Controllers\Transaction.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 10:18:09 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$history is deprecated in APPPATH\Controllers\Transaction.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 10:18:09 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$guest is deprecated in APPPATH\Controllers\Transaction.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 10:18:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 10:18:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$playstation is deprecated in APPPATH\Controllers\Transaction.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 10:18:12 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$transaction is deprecated in APPPATH\Controllers\Transaction.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 10:18:12 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$history is deprecated in APPPATH\Controllers\Transaction.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 10:18:12 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$guest is deprecated in APPPATH\Controllers\Transaction.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 10:18:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 10:18:13 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$playstation is deprecated in APPPATH\Controllers\Transaction.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 10:18:13 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$transaction is deprecated in APPPATH\Controllers\Transaction.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 10:18:13 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$history is deprecated in APPPATH\Controllers\Transaction.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 10:18:13 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$guest is deprecated in APPPATH\Controllers\Transaction.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 10:18:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 10:18:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$playstation is deprecated in APPPATH\Controllers\Transaction.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 10:18:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$transaction is deprecated in APPPATH\Controllers\Transaction.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 10:18:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$history is deprecated in APPPATH\Controllers\Transaction.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 10:18:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$guest is deprecated in APPPATH\Controllers\Transaction.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 10:18:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 10:18:18 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$playstation is deprecated in APPPATH\Controllers\Transaction.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 10:18:18 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$transaction is deprecated in APPPATH\Controllers\Transaction.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 10:18:18 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$history is deprecated in APPPATH\Controllers\Transaction.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 10:18:18 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$guest is deprecated in APPPATH\Controllers\Transaction.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 10:18:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 10:18:41 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$playstation is deprecated in APPPATH\Controllers\Transaction.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 10:18:41 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$transaction is deprecated in APPPATH\Controllers\Transaction.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 10:18:41 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$history is deprecated in APPPATH\Controllers\Transaction.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 10:18:41 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaction::$guest is deprecated in APPPATH\Controllers\Transaction.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Transaction->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 10:18:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 10:18:49 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$playstation is deprecated in APPPATH\Controllers\Home.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 10:18:49 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$transaction is deprecated in APPPATH\Controllers\Home.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 10:18:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$playstation is deprecated in APPPATH\Controllers\Home.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 10:18:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$transaction is deprecated in APPPATH\Controllers\Home.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 10:18:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$playstation is deprecated in APPPATH\Controllers\Home.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 10:18:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$transaction is deprecated in APPPATH\Controllers\Home.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 13:15:49 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$playstation is deprecated in APPPATH\Controllers\Home.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 13:15:49 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$transaction is deprecated in APPPATH\Controllers\Home.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 13:15:49 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$playstation is deprecated in APPPATH\Controllers\Home.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 13:15:49 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$playstation is deprecated in APPPATH\Controllers\Home.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 13:15:49 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$transaction is deprecated in APPPATH\Controllers\Home.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 13:15:49 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$transaction is deprecated in APPPATH\Controllers\Home.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 13:16:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$playstation is deprecated in APPPATH\Controllers\Home.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 13:16:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$transaction is deprecated in APPPATH\Controllers\Home.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 13:16:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$playstation is deprecated in APPPATH\Controllers\Home.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 13:16:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$transaction is deprecated in APPPATH\Controllers\Home.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 13:16:11 --> insertBatch() has no data.
+in SYSTEMPATH\Database\BaseBuilder.php on line 1771.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2191): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 2 SYSTEMPATH\Model.php(353): CodeIgniter\Database\BaseBuilder->insertBatch([], null, 100)
+ 3 SYSTEMPATH\BaseModel.php(880): CodeIgniter\Model->doInsertBatch([], null, 100, false)
+ 4 APPPATH\Models\RiwayatTransactionModel.php(68): CodeIgniter\BaseModel->insertBatch([])
+ 5 APPPATH\Controllers\Home.php(120): App\Models\RiwayatTransactionModel->save_trx([])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->move_to_history()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 13:16:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$playstation is deprecated in APPPATH\Controllers\Home.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 13:16:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$transaction is deprecated in APPPATH\Controllers\Home.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

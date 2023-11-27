@@ -11,8 +11,8 @@ class Home extends BaseController
     function __construct()
     {
         //set Time Indonesia
-        date_default_timezone_set('Asia/Jakarta');
-        setlocale(LC_TIME, 'id_ID');
+        // date_default_timezone_set('Asia/Jakarta');
+        // setlocale(LC_TIME, 'id_ID');
         $this->playstation = new PlaystationModel();
         $this->transaction = new RiwayatTransactionModel();
     }

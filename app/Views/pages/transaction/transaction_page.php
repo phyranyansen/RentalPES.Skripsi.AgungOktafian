@@ -7,8 +7,8 @@
             <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1">
                     <i class="bx bxs-calendar"></i></span>
-                <input type="text" value="<?= date('d/m/Y') ?>" name="startDate" id="startDate" class="form-control"
-                    required>
+                <input type="text" value="<?= date('d M Y') ?>" name="startDate" id="startDate" class="form-control"
+                    required readonly>
             </div>
         </div>
         <div class="col-md-6">

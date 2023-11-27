@@ -23,22 +23,22 @@
              </a>
              <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                  <li>
-                     <a href="playstation">
+                     <a href="data-playstation">
                          <i class="bi bi-circle"></i><span>Data Playstation</span>
                      </a>
                  </li>
                  <li>
-                     <a href="games">
+                     <a href="data-games">
                          <i class="bi bi-circle"></i><span>Data Game</span>
                      </a>
                  </li>
                  <li>
-                     <a href="components-alerts.html">
+                     <a href="data-user">
                          <i class="bi bi-circle"></i><span>Data User</span>
                      </a>
                  </li>
                  <li>
-                     <a href="components-alerts.html">
+                     <a href="data-transaksi">
                          <i class="bi bi-circle"></i><span>Data Transaksi</span>
                      </a>
                  </li>

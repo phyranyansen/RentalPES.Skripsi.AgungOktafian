@@ -4,7 +4,9 @@
     <div class="d-flex align-items-center justify-content-between">
         <a href="index.html" class="logo d-flex align-items-center">
             <img src="assets/assets/img/logo.png" alt="">
-            <span class="d-none d-lg-block">RENT</span>
+            <span class="d-none d-lg-block">GAMEBOX <span style="font-size: x-small;">Playstation</span>
+            </span>
+
         </a>
         <i class="bi bi-list toggle-sidebar-btn"></i>
     </div><!-- End Logo -->

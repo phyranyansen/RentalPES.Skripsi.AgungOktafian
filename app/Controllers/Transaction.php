@@ -340,7 +340,6 @@ public function sess_checkout_form()
         session()->set($data_sess);
         echo json_encode($data_sess);
 
-
 }
 
 
