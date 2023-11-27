@@ -1,0 +1,11 @@
+CRITICAL - 2023-10-23 14:59:57 --> time() expects exactly 0 arguments, 2 given
+in APPPATH\Views\pages\transaction\transaction_page.php on line 38.
+ 1 APPPATH\Views\pages\transaction\transaction_page.php(38): time('h:i A', false)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\rent\\app\\Views\\pages\\transaction\\transaction_page.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pages/transaction/transaction_page', [], true)
+ 5 APPPATH\Controllers\Transaction.php(17): view('pages/transaction/transaction_page')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Transaction->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
