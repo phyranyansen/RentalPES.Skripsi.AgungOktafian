@@ -22,6 +22,7 @@ $routes->get('unit-payment-list', 'HomeUser::get_payment');
 $routes->get('unit-payment', 'HomeUser::process_pembayaran');
 $routes->post('unit-konfirm', 'HomeUser::process_pembayaran_sess');
 $routes->post('payment-save', 'HomeUser::transaction_checkout_bank_form');
+$routes->get('riwayat-trx', 'HomeUser::riwayat_trx');
 
 
 

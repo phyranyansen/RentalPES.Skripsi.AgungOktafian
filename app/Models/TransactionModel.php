@@ -68,9 +68,9 @@ class TransactionModel extends Model
         FROM unit_pes a
         LEFT JOIN pemesanan b ON a.Id_Unit = b.Id_Unit
         LEFT JOIN playstation c ON a.Id_Playstation = c.Id_Playstation
-        WHERE a.Id_Unit NOT IN (SELECT DISTINCT Id_Unit FROM pemesanan) 
-            AND a.Id_Playstation like '$playstation'
-            AND a.Id_Unit = '$unit'
+        -- WHERE a.Id_Unit NOT IN (SELECT DISTINCT Id_Unit FROM pemesanan) 
+        --     AND a.Id_Playstation like '$playstation'
+        --     AND a.Id_Unit = '$unit'
         ORDER BY a.Id_Unit, b.Start_Time;
         ");
         
@@ -123,6 +123,9 @@ class TransactionModel extends Model
         return $query;
     }
 
-
+    public function delete_order($id_user)
+    {
+        $query = $this->db->query("DELETE FROM temp_ordering where Id_User = '$id_user'");
+    }
   
 }

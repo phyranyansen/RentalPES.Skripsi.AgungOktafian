@@ -50,6 +50,12 @@
                                 </li>
                                 <?php
                                  $session = session();
+                                 $successAlert = null;
+                                 $messageAlert = null;
+                                 if(!empty($session->get('res'))) {
+                                    $successAlert = $session->get('res')['status'];
+                                    $messageAlert = $session->get('res')['message'];
+                                 }
                                  if(!empty($session->get('login')))
                                  {
                                 ?>
@@ -64,7 +70,7 @@
                                                 Profile Saya</a></li>
                                         <li><a class="dropdown-item" href="unit-checkout"><i class="fa fa-list-alt"></i>
                                                 Pesanan Saya</a></li>
-                                        <li><a class="dropdown-item border-0" href="register.html"><i
+                                        <li><a class="dropdown-item border-0" href="riwayat-trx"><i
                                                     class="fa fa-file-text-o"></i> Riwayat Transaksi</a>
                                         </li>
                                         <li><a class="dropdown-item button_2 me-2 text-light border-0"
@@ -138,6 +144,14 @@
     window.onscroll = function() {
         myFunction()
     };
+
+    <?php if($successAlert != null && $messageAlert != null) {
+        ?>
+        Swal.fire('Sukses','<?php echo $messageAlert;?>', '<?php echo $successAlert;?>');
+    <?php
+
+        $session->remove('res');
+    } ?>
 
     var navbar_sticky = document.getElementById("navbar_sticky");
     var sticky = navbar_sticky.offsetTop;

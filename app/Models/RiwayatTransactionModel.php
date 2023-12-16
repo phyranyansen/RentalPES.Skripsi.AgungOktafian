@@ -42,23 +42,29 @@ class RiwayatTransactionModel extends Model
     protected $afterDelete    = [];
 
 
-    function get_trx()
+    function get_trx($id_user = null)
     {
-        $query = $this->db->query("SELECT a.Id_Unit, a.Nama_Unit, b.Id_Pemesanan, b.Kode_Pemesanan,
+        $sql = "SELECT a.Id_Unit, a.Nama_Unit, b.Id_Pemesanan, b.Kode_Pemesanan,
         b.Tanggal_Pemesanan, b.Start_Time, b.End_Time,
         b.Lama_Bermain, b.Total_Pembayaran, b.Bayar_Via, 
         COALESCE(d.Username, e.Username) AS Username,
         f.Bukti,
         b.Id_User, c.Id_Playstation, c.Kode_Playstation, c.Nama_Playstation, 
         c.Nama_Alias, c.Harga_Per_Hour
-        FROM unit_pes a
-        INNER JOIN riwayat_pemesanan b ON a.Id_Unit = b.Id_Unit
+        FROM unit_pes a INNER JOIN riwayat_pemesanan b ON a.Id_Unit = b.Id_Unit
         INNER JOIN playstation c ON a.Id_Playstation = c.Id_Playstation
         LEFT JOIN guest d ON d.Id_Guest = b.Id_Guest
         LEFT JOIN user e ON e.Id_User = b.Id_User
-        LEFT JOIN bukti_pembayaran f ON f.Id_Bukti = b.Id_Bukti
-        GROUP BY b.Id_Pemesanan
-        ORDER BY a.Id_Unit, b.Start_Time;");
+        LEFT JOIN bukti_pembayaran f ON f.Id_Bukti = b.Id_Bukti";
+
+        if($id_user != null) {
+            $sql .= " WHERE b.Id_User = '$id_user'"; 
+        }
+      
+        $sql .= " GROUP BY b.Id_Pemesanan
+        ORDER BY a.Id_Unit, b.Start_Time;";
+
+        $query = $this->db->query($sql);
 
         return $query->getResultArray();
     }
@@ -66,6 +72,11 @@ class RiwayatTransactionModel extends Model
     function save_trx($data)
     {
         $query = $this->insertBatch($data);
+        return $query;
+    }
+
+    function ins_history($data) {
+        $query = $this->insert($data);
         return $query;
     }
 
@@ -95,7 +106,7 @@ class RiwayatTransactionModel extends Model
 
     function get_revenue($startDate, $endDate)
     {
-        $query = $this->db->query("SELECT SUM(Total_Pembayaran) AS jumlah FROM riwayat_pemesanan WHERE Tanggal_Pemesanan BETWEEN '$startDate' AND '$end';");
+        $query = $this->db->query("SELECT SUM(Total_Pembayaran) AS jumlah FROM riwayat_pemesanan WHERE Tanggal_Pemesanan BETWEEN '$startDate' AND '$endDate';");
         return $query->getRowArray();
     }
 }

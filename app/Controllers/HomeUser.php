@@ -39,9 +39,11 @@ class HomeUser extends BaseController
          $content = [
             'title'     => 'Gamebox',
             'banner'    => view('templates/frontEnd/banner', $data),
-            'footer'    => view('templates/frontEnd/footer'),
-            'page'      => view('front/home/home_page')
+            'footer'    => view('templates/frontEnd/footer', $data),
+            'page'      => view('front/home/home_page', $data)
         ];
+
+        // dd(session()->get());
         
         return view('templates/frontEnd/index', $content);
     }
@@ -84,13 +86,15 @@ class HomeUser extends BaseController
 
                 }
                 $html.= "</td>";
-                $html.= '<td style="whitesmoke; text-align:center">
-                            <div class="col-md-7"> 
-                            
-                            <button type="button" class="button pt-3 pb-3 d-block btn-sm" id="'.$click.'"  data-unit="'.$row['Id_Unit'].'" ' .$status.'>Order Now</button>
-                            
-                            </div>
-                        </td>';
+                if($session->get('login') == 'logged_in') {
+                    $html.= '<td style="whitesmoke; text-align:center">
+                                <div class="col-md-7"> 
+                                
+                                <button type="button" class="button pt-3 pb-3 d-block btn-sm" id="'.$click.'"  data-unit="'.$row['Id_Unit'].'" ' .$status.'>Order Now</button>
+                                
+                                </div>
+                            </td>';
+                }
               
             $html.= "</td>";
 
@@ -202,10 +206,10 @@ class HomeUser extends BaseController
                  $html.= "<td>Rp ".number_format($result['Harga_Per_Hour'], 2)." <b>x <b>".$timer_range['total_hours']."</td>";
                  $html.= "<td>Rp ".number_format($timer_range['total_price'], 2)."</td>";
                  $html.= "<td>";
-                 $html.= "<form action='payment-save' method='post'>";
+                 $html.= "<form id='uploadId' action='payment-save' method='post' enctype='multipart/form-data'>";
                  $html.= '<input type="file" name="bukti" accept=".jpg,.jpeg,.png" id="formFile">';
-                 $html.= "<input type='text' name='id_unit' value='".$result['Id_Playstation']."'>
-                            <input type='text' name='id_pes' value='".$result['Id_Playstation']."'>
+                 $html.= "<input type='hidden' name='id_unit' value='".$result['Id_Playstation']."'>
+                            <input type='hidden' name='id_pes' value='".$result['Id_Playstation']."'>
                             <button type='submit' class='btn btn-primary btn-sm' id='btnUpload'><i class='fa fa-upload'></i></button>
                         </form>
                         </td>";
@@ -251,6 +255,7 @@ class HomeUser extends BaseController
         $tanggal     = date('m'); 
         $count       =  $this->history->get_count();
         $code        =  'TRX.00'.$count['jumlah'].'/'.$tanggal.'/2023';
+        $id_user     = session()->get('id_user');
 
         //Class Bukti
         $buktiPembayaran = new BuktiPembayaran();
@@ -264,35 +269,50 @@ class HomeUser extends BaseController
                     'Tanggal_Pemesanan' => $startDate,
                     'Start_Time'        => $session->get('startTime_user'),
                     'End_Time'          => $session->get('endTime_user'),
-                    'Lama_Bermain'      => $session->get('TimesPlay'),
+                    'Lama_Bermain'      => $session->get('TimesPlay') .  ' Jam',
                     'Total_Pembayaran'  => $timer_range['total_price'],
                     'Bayar_Via'         => 'Transfer Bank',
                     'Status_Order'      => 1,
                     'Id_User'           => session()->get('id_user'),
                     'Id_Bukti'          => $bukti['id_bukti'],
                     'Author'            => 0
-                    ];
+                ]; 
         
                 if($this->transaction->save_transaction($data))
                 {
-                        $data_sess   = [
-                            // 'Id_Unit'           => $result['Id_Unit'],
-                            'Tanggal_Pemesanan' => date('d F Y', $timestamp),
-                            'StartTime'         => $session->get('startTime_user'),
-                            'EndTime'           => $session->get('endTime_user'),
-                            'Lama_Bermain'      => $session->get('TimesPlay'),
-                            'Total_Pembayaran'  => number_format($timer_range['total_price'], 2),
-                            'Bayar_Via'         => 'Transfer Bank',
-                            'Status_Order'      => 1,
-                            'Bukti'             => $bukti['id_bukti'],
-                            'Id_User'           => session()->get('id_user'),
-                            'Username'          => $guest['Username'],
-                            'Bayar'             => number_format($timer_range['total_price'], 2),
-                            'Kembalian'         => number_format(0, 2)
-                            ];
+                        // $data_sess   = [
+                        //     // 'Id_Unit'           => $result['Id_Unit'],
+                        //     'Tanggal_Pemesanan' => date('d F Y', $timestamp),
+                        //     'StartTime'         => $session->get('startTime_user'),
+                        //     'EndTime'           => $session->get('endTime_user'),
+                        //     'Lama_Bermain'      => $session->get('TimesPlay'),
+                        //     'Total_Pembayaran'  => number_format($timer_range['total_price'], 2),
+                        //     'Bayar_Via'         => 'Transfer Bank',
+                        //     'Status_Order'      => 1,
+                        //     'Bukti'             => $bukti['id_bukti'],
+                        //     'Id_User'           => session()->get('id_user'),
+                        //     'Username'          => $session->get('username'),
+                        //     'Bayar'             => number_format($timer_range['total_price'], 2),
+                        //     'Kembalian'         => number_format(0, 2)
+                        //     ];
                     
+                        //     session()->set($data_sess);
+                        //     echo json_encode($data_sess);
+
+                        if($this->history->ins_history($data)) {
+                            $data_sess = [
+                                'res' => [
+                                    'status' => 'success',
+                                    'message' => 'Pemabayaran Sukses'
+                                ]
+                            ];
+
+                            $this->transaction->db->query("DELETE FROM temp_ordering where Id_User = '$id_user'");
+
                             session()->set($data_sess);
-                            echo json_encode($data_sess);
+                            return redirect('/');
+                        }
+
                     
                 }
 
@@ -307,14 +327,16 @@ class HomeUser extends BaseController
         $unit   = $this->request->getVar('id_unit');
         $result = $this->transaction->get_checkout($pes, $unit);
         $timer_range = $this->timer_range($result['Harga_Per_Hour']);
+        $id_user = session()->get('id_user');
         $data = [
             'Id_Unit'        => $result['Id_Unit'],
-            'Id_User'        => 1,
+            'Id_User'        => session()->get('id_user'),
             'TimesPlay'      => $timer_range['total_hours'],
             'DateOfOrdering' => date('d M Y'),
             'TimeExpired'    => strtotime('+30 minutes', time()),
         ];
-        
+
+        $this->transaction->db->query("DELETE FROM temp_ordering where Id_User = '$id_user'");
             
             if($this->temp->save($data))
             {
@@ -367,5 +389,17 @@ class HomeUser extends BaseController
         return $result;
     
     }
+
+    public function riwayat_trx()
+     {
+        $content = [
+            'title'     => 'Gamebox | Riwayat',
+            'banner'    => null,
+            'footer'    => null,
+            'page'      => view('front/riwayat/riwayat')
+        ];
+        
+        return view('templates/frontEnd/index', $content);
+     }
 
 }

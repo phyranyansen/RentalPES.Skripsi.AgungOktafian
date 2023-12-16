@@ -37,7 +37,10 @@
                                 <th class="col_oran">Harga / Jam</th>
                                 <th class="col_oran">Total Bayar</th>
                                 <th class="col_oran">Status</th>
-                                <th class="col_oran">#Order</th>
+                                <?php $session = session(); if($session->get('login') == 'logged_in') {
+                                    ?>
+                                    <th class="col_oran">#Order</th>
+                                <?php } ?>
                             </tr>
                         </thead>
                         <tbody id="unit-table">

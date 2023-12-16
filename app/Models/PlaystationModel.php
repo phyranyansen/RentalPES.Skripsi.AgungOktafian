@@ -54,7 +54,6 @@ class PlaystationModel extends Model
         return $query->getRowArray();
     }
 
-
     function get_monitoring()
     {
         $result = $this->db->query("SELECT
