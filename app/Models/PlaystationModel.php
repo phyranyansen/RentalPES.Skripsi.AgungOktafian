@@ -167,5 +167,40 @@ class PlaystationModel extends Model
       return $result->getResultArray();
     }
 
+
+    public function get_user_unit($playstation)
+    {
+        $query = $this->db->query("SELECT
+        a.Id_Unit,
+        a.Nama_Unit,
+        a.Kode_Unit,
+        b.Id_Pemesanan,
+        b.Kode_Pemesanan,
+        b.Tanggal_Pemesanan,
+        b.Start_Time,
+        b.End_Time,
+        b.Lama_Bermain,
+        b.Total_Pembayaran,
+        b.Bayar_Via,
+        b.Id_User,
+        c.Id_Playstation,
+        c.Kode_Playstation,
+        c.Nama_Playstation,
+        c.Nama_Alias,
+        c.Harga_Per_Hour,
+        CASE
+            WHEN a.Id_Unit NOT IN (SELECT DISTINCT Id_Unit FROM pemesanan) THEN 'Tersedia'
+            ELSE 'Tidak Tersedia'
+        END AS Keterangan
+    FROM
+        unit_pes a
+        LEFT JOIN pemesanan b ON a.Id_Unit = b.Id_Unit
+        LEFT JOIN playstation c ON a.Id_Playstation = c.Id_Playstation
+      WHERE a.Id_Playstation LIKE '$playstation'
+    ORDER BY
+        a.Id_Unit, b.Start_Time;");
+
+      return $query->getResultArray();
+    }
     
 }

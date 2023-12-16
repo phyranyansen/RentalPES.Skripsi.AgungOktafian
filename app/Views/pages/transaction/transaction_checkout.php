@@ -193,8 +193,8 @@
                         </div>
                         <div class="col-md-4" style="text-align: center;">
                             <span class="float-end"> <img src="assets/assets/img/logo.png" alt="">
-                                <span class="d-none d-lg-block" style="font-weight: 100; font-size: small;">TIMPOSU
-                                    RENT</span>
+                                <span class="d-none d-lg-block"
+                                    style="font-weight: 100; font-size: small;">GAMEBOX</span>
                         </div>
                     </div>
 

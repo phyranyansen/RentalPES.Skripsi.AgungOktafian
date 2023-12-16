@@ -8,61 +8,33 @@ $(document).ready(function() {
       }
     });
 
-    function updateEndTime() {
-      // Dapatkan waktu awal yang dipilih
-      var startTime = $("#startTime").val();
+    // Event listener for the #jam select element
+    $('#jam').on('change', function() {
+      // Get the selected value
+      var selectedJam = parseInt($(this).val());
 
-      // Parse waktu awal untuk mendapatkan jam dan menit
-      var parts = startTime.split(':');
-      var startHours = parseInt(parts[0]);
-      var startMinutes = parseInt(parts[1]);
+      // Get the current date and time
+      var currentDate = new Date();
+      var currentHours = currentDate.getHours();
+      var currentMinutes = currentDate.getMinutes();
 
-      // Hitung waktu akhir dengan menambahkan 1 jam ke waktu awal
-      var endHours = startHours + 1;
+      // Calculate end time based on selected jam
+      // var endTime = new Date(currentDate.getTime() + selectedJam * 60 * 60 * 1000);
+      var endTime = new Date(currentDate.getTime() + (selectedJam * 60 * 60 * 1000) + (5 * 60 *
+          1000));
 
-      // Dapatkan menit saat ini
-      var currentMinutes = new Date().getMinutes();
 
-      // Setel menit pada waktu akhir sama dengan menit saat ini
-      var endMinutes = currentMinutes;
+      // Format hours and minutes
+      var formattedCurrentTime = currentHours + ':' + (currentMinutes < 10 ? '0' : '') +
+          currentMinutes;
+      var formattedEndTime = endTime.getHours() + ':' + (endTime.getMinutes() < 10 ? '0' : '') +
+          endTime.getMinutes();
 
-      // Format waktu akhir
-      var endTime = ("0" + endHours).slice(-2) + ":" + ("0" + endMinutes).slice(-2);
-
-      // Perbarui field endTime
-      $("#endTime").val(endTime);
-
-      // Setel step untuk menit secara dinamis berdasarkan menit saat ini
-      var timepickerOptions = {
-          'timeFormat': 'h:i A',
-          'scrollDefault': 'now',
-          'forceRoundTime': true,
-          'step': currentMinutes
-      };
-
-      // Hancurkan dan inisialisasi kembali timepicker untuk field endTime dengan opsi yang diperbarui
-      $("#endTime").timepicker('remove'); // Gunakan 'remove' alih-alih 'destroy'
-      $("#endTime").timepicker(timepickerOptions);
-  }
-
-  // Lampirkan fungsi updateEndTime ke acara changeTime pada field startTime
-  $("#startTime").on('changeTime', function() {
-      updateEndTime();
+      // Update startTime and endTime fields
+      $('#startTime').val(formattedCurrentTime);
+      $('#endTime').val(formattedEndTime);
   });
 
-  // Inisialisasi timepicker untuk field startTime
-  $("#startTime").timepicker({
-      'timeFormat': 'h:i A',
-      'scrollDefault': 'now',
-      'forceRoundTime': true,
-      'step': 15 // Isi nilai step awal (contoh: 15 menit)
-  });
-
-  // Inisialisasi timepicker untuk field endTime
-  $("#endTime").timepicker({
-      'timeFormat': 'h:i A',
-      'scrollDefault': 'now',
-      'forceRoundTime': true,
-      'step': 15 // Isi nilai step awal (contoh: 15 menit)
-  });
+  // Trigger the change event initially to set the initial values
+  $('#jam').trigger('change');
 });
