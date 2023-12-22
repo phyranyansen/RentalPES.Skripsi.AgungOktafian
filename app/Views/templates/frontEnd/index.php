@@ -91,7 +91,7 @@
                                     <a class="nav-link" href="login">Sign In</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link button_2 ms-2 me-2" href="register.html">Register <i
+                                    <a class="nav-link button_2 ms-2 me-2" href="register">Register <i
                                             class="fa fa-check-circle ms-1"></i></a>
                                 </li>
                                 <?php } ?>
@@ -147,7 +147,7 @@
 
     <?php if($successAlert != null && $messageAlert != null) {
         ?>
-        Swal.fire('Sukses','<?php echo $messageAlert;?>', '<?php echo $successAlert;?>');
+    Swal.fire('Sukses', '<?php echo $messageAlert;?>', '<?php echo $successAlert;?>');
     <?php
 
         $session->remove('res');

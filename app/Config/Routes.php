@@ -9,6 +9,8 @@ use CodeIgniter\Router\RouteCollection;
 //FRONT USER PAGE
 $routes->get('/', 'HomeUser::index');
 $routes->get('login', 'Login::index');
+$routes->get('register', 'Login::register');
+$routes->post('register-user', 'Login::register_akun');
 $routes->post('login-user', 'Login::sign_in');
 
 //-------------------------------------------------------------------

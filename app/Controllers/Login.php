@@ -115,4 +115,64 @@ class Login extends BaseController
             }
        
     }
+
+
+    public function register() {
+      
+            $data = [
+                'form'      => null,
+            ];
+            $content = [
+                'title'     => 'Gamebox | Register',
+                'banner'    => null,
+                'footer'    => null,
+                'page'      => view('front/login/register_page', $data)
+            ];
+            
+            return view('templates/frontEnd/index', $content);
+   }
+
+    public function register_akun() {
+      
+        $data = [
+            'Username'    => $_POST['username'],
+            'Email'       => $_POST['email'],
+            'Password'    => password_hash($_POST['password'], PASSWORD_DEFAULT),
+            'CreatedDate' => date('d-m-Y'),
+            'UpdateDate'  => date('d-m-Y'),
+            'DeleteDate'  => date('d-m-Y'),
+            'Status'      => 1,
+            'Level'       => 1
+        ];
+        
+    $result = $this->login->get_where($_POST['email']);
+    if(!empty($result))
+    {
+        echo json_encode(array(
+            "statusCode"   =>500,
+            "pesan"        => "Email '".$result['Email']."' telah digunakan!"
+        ));
+    }else{
+        $save = $this->login->add_user($data);
+        if($save)
+        {
+        $message = [
+            'error' => false,
+            'code' => 200,
+            'text' => 'Berhasil registrasi akun!',
+        ];
+        
+        echo json_encode($message);
+    }else{
+        $message = [
+            'error' => false,
+            'code' => 404,
+            'text' => 'Gagal registrasi akun!',
+        ];
+        echo json_encode($message);
+        }
+        
+    }
+   }
+    
 }

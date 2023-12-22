@@ -91,7 +91,7 @@ $(document).ready(function() {
 
 function timer_reload() {
     setTimeout(function() {
-        window.location.href = "dashboard";
+        window.location.href = "";
     }, 1400);
 }
 </script>
