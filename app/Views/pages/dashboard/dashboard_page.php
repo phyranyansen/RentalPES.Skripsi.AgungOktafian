@@ -30,7 +30,7 @@
                                     <i class="bx bx-money"></i>
                                 </div>
                                 <div class="ps-3">
-                                    <h6>145</h6>
+                                    <h6><?= $trx['jumlah']; ?></h6>
                                     <span class="text-success small pt-1 fw-bold">12%</span> <span
                                         class="text-muted small pt-2 ps-1">increase</span>
 
@@ -66,7 +66,7 @@
                                     <i class="bx bx-wallet"></i>
                                 </div>
                                 <div class="ps-3">
-                                    <h6>Rp 3,264.000,00</h6>
+                                    <h6>Rp <?= number_format($pendapatan['pendapatan'], 2); ?></h6>
                                     <span class="text-success small pt-1 fw-bold">8%</span> <span
                                         class="text-muted small pt-2 ps-1">increase</span>
 
@@ -103,7 +103,7 @@
                                     <i class="bi bi-people"></i>
                                 </div>
                                 <div class="ps-3">
-                                    <h6>145</h6>
+                                    <h6><?= $user['jumlah'] ?></h6>
                                     <span class="text-danger small pt-1 fw-bold">12%</span> <span
                                         class="text-muted small pt-2 ps-1">decrease</span>
 

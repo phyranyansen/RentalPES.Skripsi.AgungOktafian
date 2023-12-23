@@ -19,19 +19,23 @@ class Home extends BaseController
 
 
 
-    public function index(): string
+    public function index()
     {
         $data    = [
             'pagetitle' => 'Dashboard',
+            'pendapatan'   => $this->transaction->get_pendapatan(),
+            'trx'          => $this->transaction->get_count('riwayat_pemesanan'),
+            'user'         => $this->transaction->get_count('user'),
         ];
         $content = [
             'title'     => 'Rent',
             'header'    => view('templates/header'),
             'breadcumb' => view('templates/breadcumb', $data),
             'sidebar'   => view('templates/side_bar', $data),
-            'page'      => view('pages/dashboard/dashboard_page')
+            'page'      => view('pages/dashboard/dashboard_page', $data)
         ];
         return view('index', $content);
+
     }
 
 
@@ -178,5 +182,16 @@ class Home extends BaseController
         });
     </script>';
         echo $html;
+    }
+
+
+   
+
+
+    public function logout()
+    {
+        $session = session();
+        $session->destroy();
+        return redirect()->to('');
     }
 }

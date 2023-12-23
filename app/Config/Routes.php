@@ -13,6 +13,9 @@ $routes->get('register', 'Login::register');
 $routes->post('register-user', 'Login::register_akun');
 $routes->post('login-user', 'Login::sign_in');
 
+$routes->get('logout', 'HomeUser::logout');
+$routes->get('sign-out', 'Home::logout');
+
 //-------------------------------------------------------------------
 $routes->get('unit-available', 'HomeUser::unit_available');
 $routes->get('unit-checkout', 'HomeUser::checkout_get');
@@ -25,6 +28,8 @@ $routes->get('unit-payment', 'HomeUser::process_pembayaran');
 $routes->post('unit-konfirm', 'HomeUser::process_pembayaran_sess');
 $routes->post('payment-save', 'HomeUser::transaction_checkout_bank_form');
 $routes->get('riwayat-trx', 'HomeUser::riwayat_trx');
+
+$routes->get('riwayat-cek', 'HistoryController::get_trxById');
 
 
 

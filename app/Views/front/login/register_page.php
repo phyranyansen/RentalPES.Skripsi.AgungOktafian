@@ -72,13 +72,9 @@ $(document).ready(function() {
                 cache: false,
                 success: function(data) {
                     var msg = JSON.parse(data);
-                    if (msg.statusCode == 200) {
-                        Swal.fire('Success!', msg.pesan, 'success');
-                        timer_reload();
-                    } else {
-                        Swal.fire('Oops,', msg.pesan, 'error');
+                    Swal.fire('Success!', msg.pesan, 'success');
+                    timer_reload();
 
-                    }
                 },
                 error: function(data) {
                     Swal.fire('Oops,', 'Sign-in gagal!', 'error');

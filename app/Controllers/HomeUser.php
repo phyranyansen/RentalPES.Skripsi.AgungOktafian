@@ -402,4 +402,14 @@ class HomeUser extends BaseController
         return view('templates/frontEnd/index', $content);
      }
 
+
+     
+
+     public function logout()
+     {
+         $session = session();
+         $session->destroy();
+         return redirect()->to('');
+     }
+
 }

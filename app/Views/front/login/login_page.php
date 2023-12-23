@@ -74,7 +74,8 @@ $(document).ready(function() {
                 var msg = JSON.parse(data);
                 if (msg.statusCode == 200) {
                     Swal.fire('Success!', msg.pesan, 'success');
-                    timer_reload();
+
+                    timer_reload(msg.level);
                 } else {
                     Swal.fire('Oops,', msg.pesan, 'error');
 
@@ -89,9 +90,15 @@ $(document).ready(function() {
     });
 });
 
-function timer_reload() {
+function timer_reload(level) {
     setTimeout(function() {
-        window.location.href = "";
+        if (level == 'Administrator') {
+
+            window.location.href = "dashboard";
+        } else {
+            window.location.href = "";
+
+        }
     }, 1400);
 }
 </script>

@@ -142,7 +142,7 @@ class Login extends BaseController
             'UpdateDate'  => date('d-m-Y'),
             'DeleteDate'  => date('d-m-Y'),
             'Status'      => 1,
-            'Level'       => 1
+            'Level'       => 0
         ];
         
     $result = $this->login->get_where($_POST['email']);

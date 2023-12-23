@@ -73,8 +73,8 @@
                                         <li><a class="dropdown-item border-0" href="riwayat-trx"><i
                                                     class="fa fa-file-text-o"></i> Riwayat Transaksi</a>
                                         </li>
-                                        <li><a class="dropdown-item button_2 me-2 text-light border-0"
-                                                href="register.html"><i class="fa fa-sign-out"></i> Logout</a>
+                                        <li><a class="dropdown-item button_2 me-2 text-light border-0" href="logout"><i
+                                                    class="fa fa-sign-out"></i> Logout</a>
                                         </li>
                                     </ul>
                                 </li>

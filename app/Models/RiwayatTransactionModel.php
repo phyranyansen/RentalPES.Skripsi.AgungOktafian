@@ -98,9 +98,16 @@ class RiwayatTransactionModel extends Model
     }
     
 
-    function get_count()
+    function get_count($table)
     {
-        $query = $this->db->query("SELECT COUNT(*) AS jumlah FROM riwayat_pemesanan");
+        $query = $this->db->query("SELECT COUNT(*) AS jumlah FROM $table");
+        return $query->getRowArray();
+    }
+
+    
+    function get_pendapatan()
+    {
+        $query = $this->db->query("SELECT SUM(Total_Pembayaran) as pendapatan FROM riwayat_pemesanan;");
         return $query->getRowArray();
     }
 
