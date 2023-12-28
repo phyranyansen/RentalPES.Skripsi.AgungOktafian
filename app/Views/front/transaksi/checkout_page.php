@@ -262,6 +262,18 @@ body {
 <script src="assets/assets/js/front/unit/unit_checkout.js"></script>
 <script>
 $(document).ready(function() {
+    $(document).ready(function() {
+        $.ajax({
+            url: 'unit-checkout-list',
+            method: 'GET',
+            success: function(response) {
+                $('#checkout-table').html(response);
+
+            }
+        });
+
+    });
+
     $('#unit-konfirm').submit(function(e) {
         //header form
         $.ajax({

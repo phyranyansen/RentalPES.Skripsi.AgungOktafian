@@ -152,7 +152,7 @@ class HomeUser extends BaseController
         $user   = session()->get('id_user') ?? 1;
         $date   = date('d M Y');
         $data   = $this->temp->temp_where($user);
-        $count       =  $this->history->get_count();
+        $count       =  $this->history->get_count('riwayat_pemesanan');
         $tanggal     = date('m'); 
         $code        =  'TRX.00'.$count['jumlah'].'/'.$tanggal.'/2023';
         $total = 0;
@@ -188,7 +188,7 @@ class HomeUser extends BaseController
         $user   = session()->get('id_user') ?? 1;
         $date   = date('d M Y');
         $data   = $this->temp->temp_where($user);
-        $count       =  $this->history->get_count();
+        $count       =  $this->history->get_count('riwayat_pemesanan');
         $tanggal     = date('m'); 
         $code        =  'TRX.00'.$count['jumlah'].'/'.$tanggal.'/2023';
         $total = 0;
@@ -280,24 +280,6 @@ class HomeUser extends BaseController
         
                 if($this->transaction->save_transaction($data))
                 {
-                        // $data_sess   = [
-                        //     // 'Id_Unit'           => $result['Id_Unit'],
-                        //     'Tanggal_Pemesanan' => date('d F Y', $timestamp),
-                        //     'StartTime'         => $session->get('startTime_user'),
-                        //     'EndTime'           => $session->get('endTime_user'),
-                        //     'Lama_Bermain'      => $session->get('TimesPlay'),
-                        //     'Total_Pembayaran'  => number_format($timer_range['total_price'], 2),
-                        //     'Bayar_Via'         => 'Transfer Bank',
-                        //     'Status_Order'      => 1,
-                        //     'Bukti'             => $bukti['id_bukti'],
-                        //     'Id_User'           => session()->get('id_user'),
-                        //     'Username'          => $session->get('username'),
-                        //     'Bayar'             => number_format($timer_range['total_price'], 2),
-                        //     'Kembalian'         => number_format(0, 2)
-                        //     ];
-                    
-                        //     session()->set($data_sess);
-                        //     echo json_encode($data_sess);
 
                         if($this->history->ins_history($data)) {
                             $data_sess = [
