@@ -192,7 +192,7 @@ public function transaction_checkout_bank_form()
     $result      = $this->transaction->get_checkout($pes, $unit);
     $timer_range = $this->timer_range($result['Harga_Per_Hour']);
     $tanggal     = date('m'); 
-    $count       =  $this->history->get_count();
+    $count       =  $this->history->get_count('riwayat_pemesanan');
     $code        =  'TRX.00'.$count['jumlah'].'/'.$tanggal.'/2023';
 
     
@@ -272,7 +272,7 @@ public function transaction_checkout_form()
                 $timer_range = $this->timer_range($result['Harga_Per_Hour']);
                 //------------------------------------------------------------------
                 $tanggal     = date('m'); 
-                $count       =  $this->history->get_count();
+                $count       =  $this->history->get_count('riwayat_pemesanan');
                 $code        =  'TRX.00'.$count['jumlah'].'/'.$tanggal.'/2023';
                 $data   = [
                     'Id_Unit'           => $result['Id_Unit'],
