@@ -90,7 +90,7 @@ class HomeUser extends BaseController
                     $html.= '<td style="whitesmoke; text-align:center">
                                 <div class="col-md-7"> 
                                 
-                                <button type="button" class="button pt-3 pb-3 d-block btn-sm" id="'.$click.'"  data-unit="'.$row['Id_Unit'].'" ' .$status.'>Order Now</button>
+                                <button type="button" class="button pt-3 pb-3 d-block btn-sm" id="'.$click.'"  data-unit="'.$row['Id_Unit'].'" ' .$status.'> Order Now</button>
                                 
                                 </div>
                             </td>';
@@ -210,6 +210,7 @@ class HomeUser extends BaseController
                  $html.= '<input type="file" name="bukti" accept=".jpg,.jpeg,.png" id="formFile">';
                  $html.= "<input type='hidden' name='id_unit' value='".$result['Id_Playstation']."'>
                             <input type='hidden' name='id_pes' value='".$result['Id_Playstation']."'>
+                            <input type='hidden' name='id_unit' value='".$result['Id_Unit']."'>
                             <button type='submit' class='btn btn-primary btn-sm' id='btnUpload'><i class='fa fa-upload'></i></button>
                         </form>
                         </td>";
@@ -247,13 +248,13 @@ class HomeUser extends BaseController
 
     public function transaction_checkout_bank_form()
     {
-        $pes         = $_POST['id_pes'];
+        $pes         = session()->get('pes_user');
         $unit        = $_POST['id_unit'];
         $session     = session();
         $result      = $this->transaction->get_checkout($pes, $unit);
         $timer_range = $this->timer_range($result['Harga_Per_Hour']);
         $tanggal     = date('m'); 
-        $count       =  $this->history->get_count();
+        $count       =  $this->history->get_count('riwayat_pemesanan');
         $code        =  'TRX.00'.$count['jumlah'].'/'.$tanggal.'/2023';
         $id_user     = session()->get('id_user');
 
@@ -318,6 +319,8 @@ class HomeUser extends BaseController
             'TimeExpired'    => strtotime('+30 minutes', time()),
         ];
 
+        // echo "<pre>";
+        // print_r($data);
         $this->transaction->db->query("DELETE FROM temp_ordering where Id_User = '$id_user'");
             
             if($this->temp->save($data))
@@ -361,7 +364,7 @@ class HomeUser extends BaseController
     private function timer_range($price)
     {
         
-        $jam     = session()->get('jam') ?? 1;
+        $jam     = session()->get('jam_user') ?? 1;
     
         $total_price = $jam * $price;
         $result = [
