@@ -242,45 +242,6 @@ body {
 <script src="assets/assets/js/front/unit/unit_payment.js"></script>
 <script src="assets/assets/js/history/history_getById.js"></script>
 <script>
-$(document).ready(function() {
-    $('#loginForm').submit(function(e) {
-        //header form
-        var username = $('#username').val();
-        var password = $('#password').val();
-        $.ajax({
-            url: "login-user",
-            type: "POST",
-            data: new FormData(this),
-            processData: false,
-            contentType: false,
-            cache: false,
-            success: function(data) {
-                var msg = JSON.parse(data);
-                if (msg.statusCode == 200) {
-                    Swal.fire('Success!', msg.pesan, 'success');
-                    timer_reload();
-                } else {
-                    Swal.fire('Oops,', msg.pesan, 'error');
-
-                }
-            },
-            error: function(data) {
-                Swal.fire('Oops,', 'Sign-in gagal!', 'error');
-            }
-        });
-
-        e.preventDefault();
-    });
-});
-
-function timer_reload() {
-    setTimeout(function() {
-        window.location.href = "dashboard";
-    }, 1400);
-}
-
-
-
 // Javascript stepper
 $(document).ready(function() {
     // Variable to track the current step
