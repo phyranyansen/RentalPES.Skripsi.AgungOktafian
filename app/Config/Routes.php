@@ -43,6 +43,7 @@ $routes->get('dashboard', 'Home::index');
 $routes->get('dashboard-monitoring', 'Home::get_monitoring');
 $routes->get('dashboard-unit', 'Home::get_available_unit');
 $routes->get('dashboard-refresh-monitor', 'Home::move_to_history');
+$routes->post('dashboard-done', 'Home::delete_trx');
 
 
 //Transaksi--------------------
@@ -54,6 +55,10 @@ $routes->post('transaction-save', 'Transaction::transaction_checkout_form');
 $routes->post('transaction-form', 'Transaction::transaction_checkout_bank_form');
 
 //History Transaksi--------------------
+$routes->get('data-transaksi', 'HistoryController::index');
+$routes->get('data-transaksi-get', 'HistoryController::get_HistoryTrx');
+
+//Unit Available--------------------
 $routes->get('data-transaksi', 'HistoryController::index');
 $routes->get('data-transaksi-get', 'HistoryController::get_HistoryTrx');
 

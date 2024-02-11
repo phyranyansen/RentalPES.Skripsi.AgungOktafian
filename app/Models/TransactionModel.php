@@ -51,7 +51,9 @@ class TransactionModel extends Model
         FROM unit_pes a
         LEFT JOIN pemesanan b ON a.Id_Unit = b.Id_Unit
         LEFT JOIN playstation c ON a.Id_Playstation = c.Id_Playstation
-        WHERE a.Id_Unit NOT IN (SELECT DISTINCT Id_Unit FROM pemesanan) AND a.Id_Playstation LIKE '$playstation'
+        WHERE a.Id_Unit NOT IN (SELECT DISTINCT Id_Unit FROM pemesanan) 
+        AND a.Id_Playstation LIKE '$playstation'
+        AND a.Status = 0
         ORDER BY a.Id_Unit, b.Start_Time;
         ");
         
@@ -69,8 +71,9 @@ class TransactionModel extends Model
         LEFT JOIN pemesanan b ON a.Id_Unit = b.Id_Unit
         LEFT JOIN playstation c ON a.Id_Playstation = c.Id_Playstation
          WHERE a.Id_Unit NOT IN (SELECT DISTINCT Id_Unit FROM pemesanan) 
+         
            AND a.Id_Playstation like '$playstation'
-            AND a.Id_Unit = '$unit'
+           AND a.Id_Unit = '$unit'
         ORDER BY a.Id_Unit, b.Start_Time;
         ");
         

@@ -16,6 +16,22 @@
     <link href="assets/front/css/font-awesome.min.css" rel="stylesheet">
     <link href="assets/front/css/global.css" rel="stylesheet">
     <link href="assets/front/css/index.css" rel="stylesheet">
+    <!-- other templates -->
+    <!-- jsPDF -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+
+    <!-- Other scripts and stylesheets -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js">
+    </script>
+
+    <!-- DataTables Buttons CSS and JS -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.datatables.net/buttons/2.0.1/css/buttons.dataTables.min.css">
+    <script type="text/javascript" charset="utf8"
+        src="https://cdn.datatables.net/buttons/2.0.1/js/dataTables.buttons.min.js"></script>
+    <script type="text/javascript" charset="utf8"
+        src="https://cdn.datatables.net/buttons/2.0.1/js/buttons.html5.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <script src="assets/front/js/bootstrap.bundle.min.js"></script>
 </head>
@@ -140,6 +156,22 @@
     </section>
     <!-- ohter templates Sweet Alert-->
     <script src="https://adminlte.io/themes/v3/plugins/sweetalert2/sweetalert2.min.js"></script>
+    <!-- ohter templates -->
+    <script src="https://adminlte.io/themes/v3/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="https://adminlte.io/themes/v3/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="https://adminlte.io/themes/v3/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="https://adminlte.io/themes/v3/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+    <script src="https://adminlte.io/themes/v3/plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="https://adminlte.io/themes/v3/plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+    <script src="https://adminlte.io/themes/v3/plugins/jszip/jszip.min.js"></script>
+    <script src="https://adminlte.io/themes/v3/plugins/pdfmake/pdfmake.min.js"></script>
+    <script src="https://adminlte.io/themes/v3/plugins/pdfmake/vfs_fonts.js"></script>
+    <script src="https://adminlte.io/themes/v3/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+    <script src="https://adminlte.io/themes/v3/plugins/datatables-buttons/js/buttons.print.min.js"></script>
+    <script src="https://adminlte.io/themes/v3/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+    <script src="https://adminlte.io/themes/v3/plugins/daterangepicker/daterangepicker.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
     <script>
     window.onscroll = function() {
         myFunction()

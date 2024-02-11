@@ -195,8 +195,8 @@ body {
                                     <?= session()->get('TimeExpired'); ?></div>
                             </div>
                             <div class="col-sm-4 mb-2">
-                                <!-- <div class="bg-secondary p-4 text-dark text-center"><span
-                                        class="font-weight-semibold mr-2">Shipped via:</span>UPS Ground</div> -->
+                                <img src="assets/assets/img/rekening-removebg-preview.png" width="250px" height="150px"
+                                    alt="">
                             </div>
                         </div>
                         <!-- Progress-->

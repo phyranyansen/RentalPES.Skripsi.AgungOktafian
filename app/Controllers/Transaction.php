@@ -152,6 +152,7 @@ public function sess_order_form()
         'statusCode'     => 200,
         ];
  
+        $this->sess_delete();
         session()->set($data);
         echo json_encode($data);
         // echo "<pre>";
@@ -306,7 +307,7 @@ public function transaction_checkout_form()
                        'Bayar'             => number_format($_POST['bayar'], 2),
                        'Kembalian'         => number_format($_POST['kembalian'], 2)
                        ];
-       
+                 
                        session()->set($data_sess);
                        echo json_encode($data_sess);
               

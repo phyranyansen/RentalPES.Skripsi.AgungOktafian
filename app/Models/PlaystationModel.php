@@ -123,11 +123,51 @@ class PlaystationModel extends Model
         LEFT JOIN user e ON e.Id_User = b.Id_User
     WHERE
         a.Id_Unit IN (SELECT DISTINCT Id_Unit FROM pemesanan)
-        AND b.Id_Unit = '$id'
+        AND b.Id_Unit = '$id' OR  b.Id_Pemesanan = '$id'
     ORDER BY
         a.Id_Unit, b.Start_Time;");
     
       return $result->getRowArray();
+        
+    }
+
+    function get_monitoring_ById1($id)
+    {
+        $result = $this->db->query("SELECT
+        a.Id_Unit,
+        a.Nama_Unit,
+        COALESCE(d.Username, e.Username) AS Username,
+        b.Id_Pemesanan,
+        b.Kode_Pemesanan,
+        b.Tanggal_Pemesanan,
+        b.Start_Time,
+        b.End_Time,
+        b.Lama_Bermain,
+        b.Total_Pembayaran,
+        b.Bayar_Via,
+        b.Id_User,
+        b.Id_Guest,
+        b.Status_Order,
+        b.Id_Bukti,
+        c.Id_Playstation,
+        c.Kode_Playstation,
+        c.Nama_Playstation,
+        c.Nama_Alias,
+        c.Harga_Per_Hour,
+        b.Author
+    FROM
+        unit_pes a
+        LEFT JOIN pemesanan b ON a.Id_Unit = b.Id_Unit
+        LEFT JOIN playstation c ON a.Id_Playstation = c.Id_Playstation
+        LEFT JOIN guest d ON d.Id_Guest = b.Id_Guest
+        LEFT JOIN user e ON e.Id_User = b.Id_User
+    WHERE
+        a.Id_Unit IN (SELECT DISTINCT Id_Unit FROM pemesanan)
+        AND b.Id_Unit = '$id' OR  b.Id_Pemesanan = '$id'
+    ORDER BY
+        a.Id_Unit, b.Start_Time;");
+    
+      return $result->getResultArray();
         
     }
 
@@ -155,7 +195,11 @@ class PlaystationModel extends Model
         CASE
             WHEN a.Id_Unit NOT IN (SELECT DISTINCT Id_Unit FROM pemesanan) THEN 'Tersedia'
             ELSE 'Tidak Tersedia'
-        END AS Keterangan
+        END AS Keterangan,
+        CASE
+            WHEN Status = 1 THEN 'Maintenance'
+            ELSE '-'
+        END AS Status_Label
     FROM
         unit_pes a
         LEFT JOIN pemesanan b ON a.Id_Unit = b.Id_Unit

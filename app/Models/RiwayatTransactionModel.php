@@ -44,25 +44,38 @@ class RiwayatTransactionModel extends Model
 
     function get_trx($id_user = null)
     {
-        $sql = "SELECT a.Id_Unit, a.Nama_Unit, b.Id_Pemesanan, b.Kode_Pemesanan,
-        b.Tanggal_Pemesanan, b.Start_Time, b.End_Time,
-        b.Lama_Bermain, b.Total_Pembayaran, b.Bayar_Via, 
+        $sql = "SELECT  a.Id_Unit, 
+        a.Nama_Unit, 
+        b.Id_Pemesanan,
+        b.Kode_Pemesanan,
+        b.Tanggal_Pemesanan, 
+        b.Start_Time, 
+        b.End_Time,
+        b.Lama_Bermain,
+        b.Total_Pembayaran,
+        b.Bayar_Via, 
+        b.Id_User, 
+        CASE 
+            WHEN b.Status_Order = 1 THEN 'Selesai'
+            WHEN b.Status_Order = 0 THEN 'Proses'
+            ELSE 'Aktif'
+        END AS status_order,
         COALESCE(d.Username, e.Username) AS Username,
         f.Bukti,
-        b.Id_User, c.Id_Playstation, c.Kode_Playstation, c.Nama_Playstation, 
-        c.Nama_Alias, c.Harga_Per_Hour
-        FROM unit_pes a INNER JOIN riwayat_pemesanan b ON a.Id_Unit = b.Id_Unit
-        INNER JOIN playstation c ON a.Id_Playstation = c.Id_Playstation
-        LEFT JOIN guest d ON d.Id_Guest = b.Id_Guest
-        LEFT JOIN user e ON e.Id_User = b.Id_User
-        LEFT JOIN bukti_pembayaran f ON f.Id_Bukti = b.Id_Bukti";
-
-        if($id_user != null) {
-            $sql .= " WHERE b.Id_User = '$id_user'"; 
-        }
-      
-        $sql .= " GROUP BY b.Id_Pemesanan
-        ORDER BY a.Id_Unit, b.Start_Time;";
+        c.Id_Playstation, 
+        c.Kode_Playstation, 
+        c.Nama_Playstation, 
+        c.Nama_Alias, 
+        c.Harga_Per_Hour
+FROM unit_pes a 
+INNER JOIN riwayat_pemesanan b ON a.Id_Unit = b.Id_Unit
+INNER JOIN playstation c ON a.Id_Playstation = c.Id_Playstation
+LEFT JOIN guest d ON d.Id_Guest = b.Id_Guest
+LEFT JOIN user e ON e.Id_User = b.Id_User
+LEFT JOIN bukti_pembayaran f ON f.Id_Bukti = b.Id_Bukti 
+WHERE b.Id_User LIKE '$id_user' 
+GROUP BY a.Id_Unit, b.Id_Pemesanan
+ORDER BY a.Id_Unit, b.Start_Time;";
 
         $query = $this->db->query($sql);
 
