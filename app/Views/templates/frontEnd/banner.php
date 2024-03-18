@@ -15,10 +15,11 @@
                 <div class="carousel-item active">
                     <img src="assets/front/img/game1.jpeg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-md-block">
-                        <h5>Plan your trip now</h5>
-                        <h1 class="font_50 mt-4">Save <span class="col_oran">big</span> with our <br> car rental
+                        <h5>Sewa PlayStation Sekarang!</h5>
+                        <h1 class="font_50 mt-4">Selamat datang di Rental PlayStation,<span class="col_oran">tempat
+                                terbaik untuk menyewa</span> konsol game terbaru <br> car rental
                         </h1>
-                        <p class="mt-4 mb-4">To contribute to positive change and achieve our sustainability
+                        <!-- <p class="mt-4 mb-4">To contribute to positive change and achieve our sustainability </p> -->
 
                     </div>
                 </div>
@@ -27,11 +28,9 @@
                 <div class="carousel-item">
                     <img src="assets/front/img/game2.jpeg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-md-block">
-                        <h5>Plan your trip now</h5>
-                        <h1 class="font_50 mt-4">Lorem <span class="col_oran">sit</span> dolor eget <br> sit
-                            amet</h1>
-                        <p class="mt-4 mb-4">To contribute to positive change and achieve our sustainability
-                            goals with many extraordinary</p>
+                        <h5>Game Terbaru Tersedia Disini!</h5>
+                        <h1 class="font_50 mt-4">Ciptakan pengalaman gaming yang seru <span class="col_oran">dan
+                                menyenangkan dengan menyewa </span> PlayStation terbaru dari kami. <br></h1>
 
                     </div>
                 </div>
@@ -40,11 +39,10 @@
                 <div class="carousel-item">
                     <img src="assets/front/img/game3.jpeg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-md-block">
-                        <h5>Plan your trip now</h5>
-                        <h1 class="font_50 mt-4">Semp <span class="col_oran">port</span> diam quis <br> nulla
-                            porta</h1>
-                        <p class="mt-4 mb-4">To contribute to positive change and achieve our sustainability
-                            goals with many extraordinary</p>
+                        <h5>Nikmati Sensasi Bermain!</h5>
+                        <h1 class="font_50 mt-4">Nikmati berbagai pilihan game terbaru<span class="col_oran"> dan
+                                fasilitas lengkap yang kami
+                                sediakan </span> untuk kepuasan Anda.</h1>
                     </div>
                 </div>
 

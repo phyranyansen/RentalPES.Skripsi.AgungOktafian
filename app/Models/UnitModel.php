@@ -50,4 +50,24 @@ class UnitModel extends Model
             FROM unit_pes;");
         return $query->getResultArray();
     }
+
+    public function save_edit($id, $data)
+    {
+        $query = $this->update($id, $data);
+        return $query;
+    }
+
+
+    public function get_where($where)
+    {
+        $query = $this->db->query("SELECT * FROM unit_pes WHERE Id_Unit='$where'");
+        return $query->getRowArray();
+    }
+
+    
+    // public function get_where($where)
+    // {
+    //     $query = $this->db->query("SELECT * FROM unit_pes WHERE Id_Unit='$where'");
+    //     return $query->getRowArray();
+    // }
 }

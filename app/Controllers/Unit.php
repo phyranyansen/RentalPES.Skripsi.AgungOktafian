@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 use App\Models\UnitModel;
+use App\Models\PlaystationModel;
 
 class Unit extends BaseController
 {
@@ -12,13 +13,15 @@ class Unit extends BaseController
         date_default_timezone_set('Asia/Jakarta');
         setlocale(LC_TIME, 'id_ID');
         $this->unit = new UnitModel();
+        $this->playstation = new PlaystationModel();
     }
 
 
     public function index(): string
     {
         $data    = [
-            'pagetitle' => 'Unit',
+            'pagetitle'   => 'Unit',
+            'playstation' => $this->playstation->get(),
         ];
         $content = [
             'title'     => 'Rent',
@@ -28,6 +31,33 @@ class Unit extends BaseController
             'page'      => view('pages/unit/unit_page')
         ];
         return view('index', $content);
+    }
+
+    
+    public function edit_unit()
+    {
+        $id_unit = $_POST['id_unit'];
+        if(!empty($id_unit))
+        {
+            $data    = [
+                'Kode_Unit'      => $_POST['kode_unit'],
+                'Id_Playstation' => $_POST['id_playstation'],
+                'Nama_Unit'      => $_POST['nama_unit'],
+                'Keterangan'     => $_POST['keterangan'],
+                'Status'         => $_POST['status']
+            ];
+
+            if($this->unit->save_edit($id_unit, $data))
+            {
+                $msg = [
+                    'save'    => true,
+                    'code'    => 200
+                ];
+
+                echo json_encode($msg);
+            }
+        }
+        
     }
 
 
@@ -43,8 +73,6 @@ class Unit extends BaseController
                 <th scope="col">#</th>
                 <th scope="col">Kode Unit</th>
                 <th scope="col">Nama Unit</th>
-                <th scope="col">Alias</th>
-                <th scope="col">Harga Per Jam</th>
                 <th scope="col">Keterangan</th>
                 <th scope="col">#</th>
             </tr>
@@ -55,12 +83,16 @@ class Unit extends BaseController
             $html.= "<th scope='row'>".$no."</th>";
             $html.= "<td>".$row['Kode_Unit']."</td>";
             $html.= "<td>".$row['Nama_Unit']."</td>";
-            $html.= "<td>".$row['Nama_Alias']."</td>";
-            $html.= "<td>".$row['Harga_Per_Hour']."</td>";
-            $html.= "<td>".$row['Status']."</td>";
+            if($row['Status_Label'] == '-')
+            { 
+                $html.= "<td>".$row['Status_Label']."</td>";
+
+            }else{
+                $html.= "<td><span class='badge bg-danger'>".$row['Status_Label']."</span></td>";
+            }
             $html.= "<td style='width: 100px; text-align:center'>
-                     <a href='javascript:void(0);' class='btn btn-primary btn-sm' data-ancaman='".$row['Id_Unit']."' id='id_ancaman_update' data-toggle='modal' data-target='#ancaman-update'><i class='bx bxs-edit'></i></a>
-                     <a href='javascript:void(0);' class='btn btn-warning btn-sm' data-ancaman='".$row['Id_Unit']."' id='id_ancaman_delete'><i class='bx bxs-trash'></i></a>
+                     <a href='javascript:void(0);' class='btn btn-primary btn-sm' data-unit='".$row['Id_Unit']."' data-toggle='modal' data-target='#edit-Unit' id='unit_id'><i class='bx bxs-edit'></i></a>
+                     <a href='javascript:void(0);' class='btn btn-warning btn-sm' data-unit='".$row['Id_Unit']."' id='id_ancaman_delete'><i class='bx bxs-trash'></i></a>
                      </td>";
             $html.="</tr>";
             $no++;
@@ -77,6 +109,26 @@ class Unit extends BaseController
                 ';
 
         echo $html;
+    }
+
+
+    public function get_data()
+    {
+        $id_unit = $_POST['id_unit'];
+        if(!empty($id_unit))
+        {
+            $result = $this->unit->get_where($id_unit);
+            $data = [
+                'Id_Unit'        => $result['Id_Unit'],
+                'Kode_Unit'      => $result['Kode_Unit'],
+                'Id_Playstation' => $result['Id_Playstation'],
+                'Nama_Unit'      => $result['Nama_Unit'],
+                'Keterangan'     => $result['Keterangan'],
+                'Status'         => $result['Status']
+            ];
+
+            echo json_encode($data);
+        }
     }
 
 

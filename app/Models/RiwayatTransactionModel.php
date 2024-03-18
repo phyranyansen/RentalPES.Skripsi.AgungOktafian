@@ -75,7 +75,7 @@ LEFT JOIN user e ON e.Id_User = b.Id_User
 LEFT JOIN bukti_pembayaran f ON f.Id_Bukti = b.Id_Bukti 
 WHERE b.Id_User LIKE '$id_user' 
 GROUP BY a.Id_Unit, b.Id_Pemesanan
-ORDER BY a.Id_Unit, b.Start_Time;";
+ORDER BY b.Tanggal_Pemesanan DESC";
 
         $query = $this->db->query($sql);
 

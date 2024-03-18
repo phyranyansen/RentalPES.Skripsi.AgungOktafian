@@ -46,19 +46,39 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.10.0/jquery.timepicker.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.10.0/jquery.timepicker.min.js"></script>
+    <script src="assets/vertical/js/jquery.min.js"></script>
+    <script src="assets/vertical/js/popper.min.js"></script>
+    <script src="assets/vertical/js/bootstrap.min.js"></script>
+    <script src="assets/vertical/js/modernizr.min.js"></script>
+    <script src="assets/vertical/js/detect.js"></script>
+    <script src="assets/vertical/js/fastclick.js"></script>
+    <script src="assets/vertical/js/jquery.slimscroll.js"></script>
+    <script src="assets/vertical/js/jquery.blockUI.js"></script>
+    <script src="assets/vertical/js/waves.js"></script>
+    <script src="assets/vertical/js/jquery.nicescroll.js"></script>
+    <script src="assets/vertical/js/jquery.scrollTo.min.js"></script>
+    <script src="assets/vertical/js/app.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script src="assets/assets/js/unit/unit_get.js"></script>
+    <script src="assets/assets/js/unit/unit_edit.js"></script>
+    <script>
+    $('.btn-animation').on('click', function(br) {
+        //adding animation
+        $('.modal .modal-dialog').attr('class', 'modal-dialog  ' + $(this).data("animation") + '  animated');
+    });
+    </script>
+
+    <link href="assets/vertical/plugins/select2/select2.min.css" rel="stylesheet" type="text/css" />
 
     <!-- other templates -->
+    <link href="assets/vertical/plugins/animate/animate.css" rel="stylesheet" type="text/css">
 
+    <link href="assets/vertical/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/vertical/css/icons.css" rel="stylesheet" type="text/css">
+    <!-- <link href="assets/vertical/css/style.css" rel="stylesheet" type="text/css"> -->
     <!-- Template Main CSS File -->
     <link href="assets/assets/css/style.css" rel="stylesheet">
-
-    <!-- =======================================================
-  * Template Name: NiceAdmin
-  * Updated: Sep 18 2023 with Bootstrap v5.3.2
-  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
@@ -101,6 +121,7 @@
 
 
 
+    <script src="assets/vertical/plugins/select2/select2.min.js" type="text/javascript"></script>
 
     <!-- Vendor JS Files -->
     <script src="assets/assets/vendor/apexcharts/apexcharts.min.js"></script>
@@ -111,6 +132,8 @@
     <!-- <script src="assets/assets/vendor/simple-datatables/simple-datatables.js"></script> -->
     <script src="assets/assets/vendor/tinymce/tinymce.min.js"></script>
     <script src="assets/assets/vendor/php-email-form/validate.js"></script>
+
+
 
 
     <!-- ohter templates Sweet Alert-->
@@ -133,14 +156,6 @@
 
     <script>
     $(function() {
-        //Initialize Select2 Elements
-        $('.select2').select2()
-
-        //Initialize Select2 Elements
-        $('.select2bs4').select2({
-            theme: 'bootstrap4'
-        })
-
         //Datemask dd/mm/yyyy
         $('#datemask').inputmask('dd/mm/yyyy', {
             'placeholder': 'dd/mm/yyyy'

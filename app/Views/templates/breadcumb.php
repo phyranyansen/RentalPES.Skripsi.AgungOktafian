@@ -1,7 +1,7 @@
 <div class="pagetitle">
     <h1><?= $pagetitle; ?></h1>
     <nav>
-        <ol class="breadcrumb">
+        <ol class="breadcrumb bg-light">
             <li class="breadcrumb-item"><a href="index.html"><?= $pagetitle; ?></a></li>
             <li class="breadcrumb-item">Pages</li>
             <li class="breadcrumb-item active">Blank</li>

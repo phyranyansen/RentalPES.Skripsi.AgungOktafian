@@ -106,7 +106,7 @@
     <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <script src="dist/js/adminlte.min.js?v=3.2.0"></script>
-
+    <script src="assets/assets/js/unit/unit_get.js"></script>
     <script src="dist/js/demo.js"></script>
 </body>
 

@@ -71,7 +71,11 @@ $routes->post('transaction-order-params', 'Transaction::sess_order_form');
 $routes->get('data-playstation', 'Playstation::index');
 $routes->get('playstation-get', 'Playstation::playstation_get');
 
-
+//Unit Available--------------------
+$routes->get('unit', 'Unit::index');
+$routes->get('data-unit', 'Unit::unit_get');
+$routes->post('get-unit', 'Unit::get_data');
+$routes->post('edit-unit', 'Unit::edit_unit');
 
 //Playstation-----------------------------------
 $routes->get('data-games', 'Game::index');
