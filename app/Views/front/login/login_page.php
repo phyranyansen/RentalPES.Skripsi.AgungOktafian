@@ -41,7 +41,7 @@
                         <h6 class="mt-4 mb-0">
                             <button type="submit" class="button">Login <i class="fa fa-sign-in ms-1"></i></button>
                         </h6>
-                        <p class="mt-4 mb-0">Don't have an account? <a class="col_oran" href="login">Register</a>
+                        <p class="mt-4 mb-0">Don't have an account? <a class="col_oran" href="register">Register</a>
                         </p>
                 </form>
                 <!-- </div> -->
