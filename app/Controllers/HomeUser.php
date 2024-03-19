@@ -24,13 +24,21 @@ class HomeUser extends BaseController
         $this->guest       = new GuestModel();
         $this->temp        = new TempOrdering();
         $this->bank        = new RekeningModel();
-
+       
         //controller
       
     }
 
     public function index()
     {
+
+        $session = \Config\Services::session();
+        $isLoggedIn = $session->get('login') === 'logged_in';
+    
+        if ($isLoggedIn) {
+            return redirect()->to('dashboard'); 
+         }
+
         $pes['pes']      = $this->playstation->findAll();
         $data = [
             'form'      => view('templates/frontEnd/user_form', $pes),
@@ -70,12 +78,21 @@ class HomeUser extends BaseController
                 $click  = null;
                 if($row['Keterangan']=='Tersedia') {
                     
-                    $html.= "<span class='text-primary'>";
-                    $html.= "".$row['Keterangan']."";
-                    $html.= "</span>";
-                    
-                    $status = null;
-                    $click  = "order";
+                    if($row['Status']==0)
+                    {
+                        $html.= "<span class='text-primary'>";
+                        $html.= "".$row['Keterangan']."";
+                        $html.= "</span>";
+                        
+                        $status = null;
+                        $click  = "order";
+                    }else{
+                        $html.= "<span class='text-secondary'>";
+                        $html.= "Maintenance";
+                        $html.= "</span>";
+                        $click  = null;
+                        $status ='disabled';
+                    }
                 }else{
                     $html.= "<span class='text-secondary'>";
                     $html.= "".$row['Keterangan']."";
@@ -87,13 +104,25 @@ class HomeUser extends BaseController
                 }
                 $html.= "</td>";
                 if($session->get('login') == 'logged_in') {
-                    $html.= '<td style="whitesmoke; text-align:center">
-                                <div class="col-md-7"> 
-                                
-                                <button type="button" class="button pt-3 pb-3 d-block btn-sm" id="'.$click.'"  data-unit="'.$row['Id_Unit'].'" ' .$status.'> Order Now</button>
-                                
-                                </div>
-                            </td>';
+                    if($row['Status']==1)
+                    {
+
+                        $html.= '<td style="whitesmoke; text-align:center">
+                                    <div class="col-md-7"> 
+                                    
+                                    <button type="button" class="button pt-3 pb-3 d-block btn-sm btn-secondary"   data-unit="'.$row['Id_Unit'].'" ' .$status.'> Order Now</button>
+                                    
+                                    </div>
+                                </td>';
+                    }else{
+                        $html.= '<td style="whitesmoke; text-align:center">
+                                    <div class="col-md-7"> 
+                                    
+                                    <button type="button" class="button pt-3 pb-3 d-block btn-sm" id="'.$click.'"  data-unit="'.$row['Id_Unit'].'" ' .$status.'> Order Now</button>
+                                    
+                                    </div>
+                                </td>';
+                    }
                 }
               
             $html.= "</td>";

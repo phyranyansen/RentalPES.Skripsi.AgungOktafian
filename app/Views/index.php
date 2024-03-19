@@ -62,6 +62,8 @@
     <script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
     <script src="assets/assets/js/unit/unit_get.js"></script>
     <script src="assets/assets/js/unit/unit_edit.js"></script>
+    <script src="assets/assets/js/user/user_get.js"></script>
+    <script src="assets/assets/js/user/user_edit.js"></script>
     <script>
     $('.btn-animation').on('click', function(br) {
         //adding animation

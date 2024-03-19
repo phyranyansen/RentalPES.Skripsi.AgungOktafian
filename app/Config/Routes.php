@@ -5,6 +5,8 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
+
+
 //-------------------------------------------------------------------
 //FRONT USER PAGE
 $routes->get('/', 'HomeUser::index');
@@ -30,14 +32,14 @@ $routes->post('payment-save', 'HomeUser::transaction_checkout_bank_form');
 $routes->get('riwayat-trx', 'HomeUser::riwayat_trx');
 
 $routes->get('riwayat-cek', 'HistoryController::get_trxById');
-
-
+//----------------------------------------------------------------------------
 
 
 //----------------------------------------------------------------
 //BACK
 // $routes->get('/', 'Home::index');
 // $routes->get('/', 'Login::index');
+$routes->group('', ['filter' => 'auth'], function ($routes) {
 $routes->get('dashboard', 'Home::index');
 //Dashboard
 $routes->get('dashboard-monitoring', 'Home::get_monitoring');
@@ -71,6 +73,12 @@ $routes->post('transaction-order-params', 'Transaction::sess_order_form');
 $routes->get('data-playstation', 'Playstation::index');
 $routes->get('playstation-get', 'Playstation::playstation_get');
 
+//User-----------------------------------
+$routes->get('data-user', 'User::index');
+$routes->get('user-get', 'User::user_get');
+$routes->post('get-user', 'User::get_data');
+$routes->post('edit-user', 'Unit::edit_user');
+
 //Unit Available--------------------
 $routes->get('unit', 'Unit::index');
 $routes->get('data-unit', 'Unit::unit_get');
@@ -81,3 +89,5 @@ $routes->post('edit-unit', 'Unit::edit_unit');
 $routes->get('data-games', 'Game::index');
 $routes->get('games-get', 'Game::game_get');
 $routes->post('games-post', 'Game::game_insert');
+
+});

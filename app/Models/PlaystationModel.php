@@ -217,6 +217,7 @@ class PlaystationModel extends Model
         a.Id_Unit,
         a.Nama_Unit,
         a.Kode_Unit,
+        a.Status,
         b.Id_Pemesanan,
         b.Kode_Pemesanan,
         b.Tanggal_Pemesanan,

@@ -15,12 +15,23 @@ class Home extends BaseController
         setlocale(LC_TIME, 'id_ID');
         $this->playstation = new PlaystationModel();
         $this->transaction = new RiwayatTransactionModel();
+        if(session()->get('login') == 'logged_in'){
+           return  base_url('login');
+         }
     }
 
 
 
     public function index()
     {
+
+        // $session = \Config\Services::session();
+        // $isLoggedIn = $session->get('login') === 'logged_in';
+    
+        // if ($isLoggedIn) {
+        //     return redirect()->to('login'); 
+        //  }
+
         $data    = [
             'pagetitle' => 'Dashboard',
             'pendapatan'   => $this->transaction->get_pendapatan(),

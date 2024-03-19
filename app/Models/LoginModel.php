@@ -168,4 +168,18 @@ class LoginModel extends Model
         $query = $this->db->query("SELECT count(*) as $table FROM $table");
         return $query->getRowArray();
     }
+
+    public function save_edit($id, $data)
+    {
+        $query = $this->update($id, $data);
+        return $query;
+    }
+
+
+    public function get_user_where($where)
+    {
+        $query = $this->db->query("SELECT * FROM user WHERE Id_User='$where'");
+        return $query->getRowArray();
+    }
+    
 }

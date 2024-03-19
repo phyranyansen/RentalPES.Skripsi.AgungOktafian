@@ -4,7 +4,7 @@
 
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Data Unit <span style="float: right;">
+                    <h5 class="card-title">Data User <span style="float: right;">
                             <button type="button" class="btn btn-primary waves-effect waves-light" data-toggle="modal"
                                 data-animation="bounce" data-target=".bs-example-modal-lg">
                                 <i class="fa fa-plus"></i>
@@ -15,7 +15,7 @@
                         conver to a datatable</p> -->
 
                     <!-- Table with stripped rows -->
-                    <div id="unit-table"></div>
+                    <div id="user-table"></div>
 
                     <!-- End Table with stripped rows -->
                     <br>
@@ -38,26 +38,32 @@
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
             </div>
             <div class="modal-body">
-                <form action="javascript:void(0);" id="add-project">
+                <form action="javascript:void(0);" id="edit-unit">
                     <div class="modal-body">
-                        <!-- <div class="form-group col-md-12">
-                            <label for="date">Kode Unit</label>
-                            <input type="text" value="" class="form-control" name="kode_unit" required>
-                        </div> -->
                         <div class="form-group col-md-12">
-                            <label for="date">Nama Unit</label>
-                            <input type="text" class="form-control" name="nama_unit" placeholder="Nama Unit" required>
+                            <label for="date">Username</label>
+                            <input type="text" class="form-control" name="username">
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label for="date">Email</label>
+                            <input type="text" class="form-control" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label for="date">Alamat</label>
+                            <textarea name="alamat" class="form-control" cols="1" rows="1"></textarea>
+
                         </div>
                         <div class="form-group col-md-12">
                             <label for="aset">Status</label>
-                            <select class="select2 form-control mb-3 custom-select" style="width: 100%; height:36px;">
-                                <option value="0">-</option>
-                                <option value="1">Maintenance</option>
+                            <select class="select2 form-control mb-3 custom-select" name="status"
+                                style="width: 100%; height:36px;">
+                                <option value="1">Aktif</option>
+                                <option value="0">Tidak Aktif</option>
                             </select>
                         </div>
                         <div class="form-group col-md-12">
-                            <label for="aset">Playstation</label>
-                            <textarea name="keterangan" class="form-control" id="" cols="1" rows="1"></textarea>
+                            <label for="aset">Telepon</label>
+                            <input type="text" class="form-control" name="no_telp" placeholder="No. Telepon" required>
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -65,6 +71,7 @@
                             data-dismiss="modal" aria-hidden="true">Close</button>
                         <button type="submit" class="btn btn-primary waves-effect waves-light btn-sm">Simpan</button>
                     </div>
+                </form>
                 </form>
             </div>
         </div><!-- /.modal-content -->
@@ -82,38 +89,34 @@
                 <h5 class="modal-title mt-0" id="myModalLabel">Form Unit</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
             </div>
-            <form action="javascript:void(0);" id="edit-unit">
+            <form action="javascript:void(0);" id="edit-user">
                 <div class="modal-body">
                     <div class="form-group col-md-12">
-                        <label for="date">Kode Unit</label>
+                        <label for="date">Username</label>
                         <input type="hidden" name="id_unit" id="id_unit">
-                        <input type="text" class="form-control" name="kode_unit" id="kode_unit" readonly>
+                        <input type="text" class="form-control" name="username" id="username">
                     </div>
                     <div class="form-group col-md-12">
-                        <label for="date">Nama Unit</label>
-                        <input type="text" class="form-control" name="nama_unit" id="nama_unit" placeholder="Nama Unit"
-                            required>
+                        <label for="date">Email</label>
+                        <input type="text" class="form-control" name="email" id="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label for="date">Alamat</label>
+                        <textarea name="alamat" class="form-control" id="alamat" cols="1" rows="1"></textarea>
+
                     </div>
                     <div class="form-group col-md-12">
                         <label for="aset">Status</label>
                         <select class="select2 form-control mb-3 custom-select" name="status"
                             style="width: 100%; height:36px;">
-                            <option value="0">-</option>
-                            <option value="1">Maintenance</option>
+                            <option value="1">Aktif</option>
+                            <option value="0">Tidak Aktif</option>
                         </select>
                     </div>
                     <div class="form-group col-md-12">
-                        <label for="aset">Playstation</label>
-                        <select class="select2 form-control mb-3 custom-select" name="id_playstation"
-                            style="width: 100%; height:36px;">
-                            <?php foreach($playstation as $row) { ?>
-                            <option value="<?= $row['Id_Playstation'] ?>"><?= $row['Nama_Playstation'] ?></option>
-                            <?php } ?>
-                        </select>
-                    </div>
-                    <div class="form-group col-md-12">
-                        <label for="aset">Keterangan</label>
-                        <textarea name="keterangan" class="form-control" id="" cols="1" rows="1"></textarea>
+                        <label for="aset">Telepon</label>
+                        <input type="text" class="form-control" name="no_telp" id="no_telp" placeholder="No. Telepon"
+                            required>
                     </div>
                 </div>
                 <div class="modal-footer">
