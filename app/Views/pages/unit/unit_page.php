@@ -5,9 +5,10 @@
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">Data Unit <span style="float: right;">
-                            <button type="button" class="btn btn-primary waves-effect waves-light" data-toggle="modal"
-                                data-animation="bounce" data-target=".bs-example-modal-lg">
-                                <i class="fa fa-plus"></i>
+                            <button type="button" class="btn waves-effect waves-light text-light"
+                                style="background-color:#f16a41" data-toggle="modal" data-animation="bounce"
+                                data-target=".bs-example-modal-lg">
+                                <i class="fa fa-plus text-light"></i>
                                 Tambah</button></span></h5>
                     <!-- <p>Add lightweight datatables to your project with using the <a
                             href="https://github.com/fiduswriter/Simple-DataTables" target="_blank">Simple

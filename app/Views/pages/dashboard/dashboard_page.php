@@ -138,8 +138,58 @@
 
     </div>
 </section>
-<script src="assets/assets/js/dashboard/dashboard.js"></script>
 
+
+<div id="dashboard-edit" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog"
+    aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title mt-0" id="myModalLabel">Tambah Waktu</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            </div>
+            <form action="javascript:void(0);" id="edit-user">
+                <div class="modal-body">
+                    <div class="form-group col-md-12">
+                        <label for="date">Username</label>
+                        <input type="hidden" name="id_unit" id="id_unit">
+                        <input type="text" class="form-control" name="username" id="username">
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label for="date">Email</label>
+                        <input type="text" class="form-control" name="email" id="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label for="date">Alamat</label>
+                        <textarea name="alamat" class="form-control" id="alamat" cols="1" rows="1"></textarea>
+
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label for="aset">Status</label>
+                        <select class="select2 form-control mb-3 custom-select" name="status"
+                            style="width: 100%; height:36px;">
+                            <option value="1">Aktif</option>
+                            <option value="0">Tidak Aktif</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label for="aset">Telepon</label>
+                        <input type="text" class="form-control" name="no_telp" id="no_telp" placeholder="No. Telepon"
+                            required>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary waves-effect waves-light btn-sm" data-dismiss="modal"
+                        aria-hidden="true">Close</button>
+                    <button type="submit" class="btn btn-primary waves-effect waves-light btn-sm">Simpan</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<script src="assets/assets/js/dashboard/dashboard.js"></script>
 <script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {

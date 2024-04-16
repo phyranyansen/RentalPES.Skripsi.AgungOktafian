@@ -62,7 +62,7 @@
     </tr>
 </table>
 <p class="float-end">
-    <i class="ri ri-playstation-fill text-primary"></i> <?= session('nama_pes'); ?>
+    <i class="ri ri-playstation-fill" style="color:#f16a41"></i> <?= session('nama_pes'); ?>
 
 </p>
 <br>

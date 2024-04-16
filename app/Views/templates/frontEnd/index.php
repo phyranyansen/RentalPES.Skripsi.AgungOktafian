@@ -110,6 +110,12 @@
                                     <a class="nav-link button_2 ms-2 me-2" href="register">Register <i
                                             class="fa fa-check-circle ms-1"></i></a>
                                 </li>
+                                <?php } else{ ?>
+
+                                <li class="nav-item">
+                                    <a class="nav-link button_2 ms-2 me-2 bg_light" href="javascript:void(0);">
+                                        Hi, <?= $session->get('email'); ?></a>
+                                </li>
                                 <?php } ?>
                                 <!-- <li class="nav-item">
                                     <a class="nav-link button_2 ms-2 me-2 bg_light" href="javascript:void(0);">

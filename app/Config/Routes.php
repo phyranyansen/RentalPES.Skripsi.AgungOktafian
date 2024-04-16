@@ -39,7 +39,12 @@ $routes->get('riwayat-cek', 'HistoryController::get_trxById');
 //BACK
 // $routes->get('/', 'Home::index');
 // $routes->get('/', 'Login::index');
-$routes->group('', ['filter' => 'auth'], function ($routes) {
+// $routes->group('', ['filter' => 'auth'], function ($routes) {
+
+    
+
+
+
 $routes->get('dashboard', 'Home::index');
 //Dashboard
 $routes->get('dashboard-monitoring', 'Home::get_monitoring');
@@ -90,4 +95,4 @@ $routes->get('data-games', 'Game::index');
 $routes->get('games-get', 'Game::game_get');
 $routes->post('games-post', 'Game::game_insert');
 
-});
+// });

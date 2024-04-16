@@ -36,7 +36,7 @@
     </tr>
 </table>
 <p class="float-end">
-    <i class="ri ri-playstation-fill text-primary"></i> <?= $playstation; ?>
+    <i class="ri ri-playstation-fill" style="color:#f16a41"></i> <?= $playstation; ?>
 
 </p>
 <br>

@@ -32,12 +32,7 @@ class HomeUser extends BaseController
     public function index()
     {
 
-        $session = \Config\Services::session();
-        $isLoggedIn = $session->get('login') === 'logged_in';
-    
-        if ($isLoggedIn) {
-            return redirect()->to('dashboard'); 
-         }
+     
 
         $pes['pes']      = $this->playstation->findAll();
         $data = [
@@ -344,7 +339,7 @@ class HomeUser extends BaseController
             'Id_Unit'        => $result['Id_Unit'],
             'Id_User'        => session()->get('id_user'),
             'TimesPlay'      => $timer_range['total_hours'],
-            'DateOfOrdering' => date('d M Y'),
+            'DateOfOrdering' => date('d-m-Y'),
             'TimeExpired'    => strtotime('+30 minutes', time()),
         ];
 

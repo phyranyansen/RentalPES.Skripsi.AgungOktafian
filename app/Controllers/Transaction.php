@@ -99,7 +99,7 @@ class Transaction extends BaseController
                 $html.= "<td>Rp ".number_format($row['Harga_Per_Hour'], 2)." <b>x <b>".$timer_range['total_hours']."</td>";
                 $html.= "<td>Rp ".number_format($timer_range['total_price'], 2)."</td>";
                 $html.= '<td>
-                            <button type="button" class="btn btn-primary btn-sm" id="order" data-unit="'.$row['Id_Unit'].'">Order Now</button>
+                            <button type="button" class="btn btn-sm text-light" style="background-color:#f16a41" id="order" data-unit="'.$row['Id_Unit'].'">Order Now</button>
                        </td>';
 
             $html.= "</td>";
@@ -123,7 +123,7 @@ class Transaction extends BaseController
 public function sess_form()
 {
     $data = [
-    'startDate'  => $_POST['startDate'],
+    'startDate'  => date('d-m-Y'),
     'startTime'  => $_POST['startTime'],
     'endTime'    => $_POST['endTime'],
     'pes'        => $_POST['playstation'],
@@ -228,7 +228,7 @@ public function transaction_checkout_bank_form()
             {
                     $data_sess   = [
                         // 'Id_Unit'           => $result['Id_Unit'],
-                        'Tanggal_Pemesanan' => date('d F Y', $timestamp),
+                        'Tanggal_Pemesanan' => date('d-m-Y', $timestamp),
                         'StartTime'         => $session->get('startTime'),
                         'EndTime'           => $session->get('endTime'),
                         'Lama_Bermain'      => $_POST['totalPlays'],

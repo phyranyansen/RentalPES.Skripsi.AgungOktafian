@@ -25,13 +25,7 @@ class Home extends BaseController
     public function index()
     {
 
-        // $session = \Config\Services::session();
-        // $isLoggedIn = $session->get('login') === 'logged_in';
-    
-        // if ($isLoggedIn) {
-        //     return redirect()->to('login'); 
-        //  }
-
+      
         $data    = [
             'pagetitle' => 'Dashboard',
             'pendapatan'   => $this->transaction->get_pendapatan(),
@@ -56,7 +50,7 @@ class Home extends BaseController
         $no=1;
         $data = $this->playstation->get_monitoring();
         $html.= '
-        <table class="table" id="data_monitoring">
+        <table class="table table-hover" id="data-jam" style="width: 100%;">
         <thead>
             <tr>
                 <th scope="col">Kode TRX</th>
@@ -82,12 +76,17 @@ class Home extends BaseController
             </th>";
             
             
-            $html .= "<td> <button class='btn btn-outline-primary btn-sm btn-selesai' data-id='".$row['Id_Pemesanan']."' id='btn-selesai'>Selesai</button></td>";
+            $html .= "<td>
+                 <button class='btn btn-success btn-sm btn-selesai' data-id='".$row['Id_Pemesanan']."' id='btn-selesai'><i class='fa fa-refresh'></i> Selesai</button> 
+                 <button class='btn btn-primary btn-sm btn-tambah' data-id='".$row['Id_Pemesanan']."' id='btn-tambah' data-toggle='modal' data-target='#dashboard-edit'><i class='fa fa-clock-o'></i> Tambah</button>
+                 </td>";
+
 
             $html.="</tr>";
             $no++;
         }
         $html .= '
+        <script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
         <script src="plugins/jquery/jquery.min.js"></script>
         <script type="text/javascript">
         $(document).ready(function() {
@@ -106,13 +105,45 @@ class Home extends BaseController
                             url: "dashboard-monitoring",
                             method: "GET",
                             success: function(response) {
-                              $("#table-monitoring").html(response);
-                           
+                            $("#table-monitoring").html(response);
+                        
                             }
-                          });
-                      
+                        });
                     }
                 });
+            });
+        
+            // $(".btn-tambah").on("click", function() {
+            //     var dataId = $(this).data("id");
+            //     $.ajax({
+            //         url: "dashboard-edit",
+            //         method: "POST",
+            //         data    : {
+            //             id_pemesanan : dataId
+            //         },
+            //         success: function(data) {
+            //             var msg = JSON.parse(data);
+            //             Swal.fire("Sukses!", msg.pesan, "success");
+            //             $.ajax({
+            //                 url: "dashboard-monitoring",
+            //                 method: "GET",
+            //                 success: function(response) {
+            //                 $("#table-monitoring").html(response);
+                        
+            //                 }
+            //             });
+                    
+            //         }
+            //     });
+            // });
+        });
+        $(document).ready(function() {
+            $("#data-jam").DataTable({
+                "paging": false,
+                "lengthChange": false,
+                "searching": true,
+                "ordering": true,
+                "info": true,
             });
         });
         </script>

@@ -82,7 +82,7 @@
         <!-- <div class="spinner-border text-primary" role="status">
             <span class="visually-hidden">Loading...</span>
         </div> -->
-        <button type="submit" class="btn btn-primary">Get Order</button>
+        <button type="submit" class="btn text-light" style="background-color:#f16a41">Get Order</button>
     </div>
 </form><!-- End Custom Styled Validation -->
 
